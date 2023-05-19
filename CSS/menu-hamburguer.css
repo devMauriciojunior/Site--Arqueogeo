@@ -133,8 +133,12 @@
 }
 
 @media(max-width: 480px) {
+    .header {
+        padding: 0 1rem;
+    }
+
     .navbar .Logo-Arqueogeo img {
-        width: 150px;
+        width: 170px;
     }
 
     .header .menu-suspenso {
