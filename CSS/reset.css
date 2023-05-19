@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --corMarromClara: #a87b4d;
+    --corMarromEscura: #4e2e10;
+
+    --cor1: #8c6d4a;
+    --cor2: #603813;
+    --cor3: #482a13;
+    --cor4: #341d10;
+
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
