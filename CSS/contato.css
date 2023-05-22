@@ -1,3 +1,140 @@
 body {
    height: 100vh;
 }
+
+/* TITULO DA PÁGINA */
+
+main .titulo {
+   color: var(--corMarromEscura);
+   height: 30vh;
+   max-width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 2.5rem;
+   text-align: center;
+}
+
+main .titulo h1 {
+   font-size: 2rem;
+   font-weight: 400;
+}
+
+/* CONTADO DOS SOCIOS */
+
+main .formulario {
+   margin: 40px auto;
+   max-width: 90%;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+.formulario .contato {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contato .donos-arqueogeo {
+   padding: 15px 0px;
+   line-height: 1.7rem;
+}
+
+.contato .donos-arqueogeo h5 {
+   font-size: 1.05rem;
+   font-weight: 600;
+   color: var(--corMarromEscura);
+}
+
+.contato .donos-arqueogeo > p {
+   font-size: .9rem;
+   color: var(--corMarromEscura);
+}
+
+.donos-arqueogeo > div {
+   display: flex;
+   align-items: center;
+   column-gap: 7px;
+}
+
+.donos-arqueogeo > div img {
+   width: 23px;
+}
+
+.donos-arqueogeo div > p {
+   font-size: .9rem;
+   color: var(--corMarromClara);
+}
+
+/* FORMULARIO DE CONTATO */
+
+.formulario .forms {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   max-width: 100%;
+}
+
+.forms div {
+   width: 80%;
+   display: flex;
+   align-items: center;
+   column-gap: 30px;
+   margin: 15px 0px;
+}
+
+.forms div input {
+   border: none;
+   border-bottom: 1px solid var(--corMarromClara);
+   padding: 10px;
+   width: 100%;
+   font-size: .9rem;
+   transition: .4s;
+}
+
+.forms div input:focus-visible {
+   outline: none;
+   border-bottom: 1px solid var(--corMarromEscura);
+   background-color: #f0f0f0;
+}
+
+.forms div textarea {
+   border: none;
+   border: 1px solid var(--corMarromClara);
+   padding: 10px;
+   width: 100%;
+   font-size: .9rem;
+   transition: .5s;
+}
+
+.forms textarea:focus-visible {
+   outline: none;
+   border-bottom: 1px solid var(--corMarromEscura);
+   background-color: #f0f0f0;
+}
+
+.forms input[type="submit"] {
+   margin-top: 15px;
+   padding: 10px 30px;
+   font-size: .9rem;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   text-decoration: none;
+   color: var(--corMarromClara);
+   background: transparent;
+   cursor: pointer;
+   transition: ease-out .4s;
+   border: 1px solid var(--corMarromClara);
+   box-shadow: inset 0 0 0 0 var(--corMarromEscura);
+}
+
+.forms input[type="submit"]:hover {
+   color: white;
+   box-shadow: inset 0 -100px 0 0 var(--corMarromClara);
+}
+
+.forms input[type="submit"]:active {
+   transform: scale(0.9);
+}
