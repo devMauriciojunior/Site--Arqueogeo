@@ -22,5 +22,6 @@
 }
 
 body {
-    background: url(../Imagens/Background-Topology.jpg) no-repeat center / cover;
+    background: url(../Imagens/Background-Topology.jpg) repeat-y center / cover;
+    height: 100vh;
 }
