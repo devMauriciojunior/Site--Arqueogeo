@@ -138,3 +138,11 @@ main .formulario {
 .forms input[type="submit"]:active {
    transform: scale(0.9);
 }
+
+/* MEDIA QUERRY */
+@media (max-width: 768px) {
+   main .formulario {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+   }
+}
