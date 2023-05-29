@@ -142,7 +142,6 @@ main .formulario {
 /* FOOTER */
 
 footer {
-   /* height: 160px; */
    background-color: var(--corMarromEscura);
    padding: 1rem 3rem;
 }
@@ -153,26 +152,39 @@ footer .Logo-footer {
    align-items: center;
 }
 
-footer .Logo-footer img {
-   width: 180px;
+footer .Logo-footer .Logo-img {
+   width: 150px;
 } 
 
-footer .links-footer {
+footer .Links-footer {
    display: flex;
+   row-gap: 10px;
 }
 
-footer .links-footer li {
-   margin-inline: 10px;
-}
-
-footer .links-footer li a {
+footer .Links-footer li a {
    color: var(--corMarromClara);
    font-size: 1.1rem;
+   padding: 7px;
 }
 
-footer .icons img {
+footer .Links-footer li a:hover  {
+   background-color: var(--corMarromClara);
+   color: var(--corMarromEscura);
+   border-radius: 5px;
+}
+
+footer .Icons {
+   display: flex;
+   column-gap: 10px;
+}
+
+footer .Icons img {
    width: 25px;
-   margin-inline: 5px;
+   cursor: pointer;
+}
+
+footer .Icons img:hover {
+   transform: scale(1.2)
 }
 
 footer .Direitos {
@@ -195,15 +207,11 @@ footer span {
       row-gap: 50px;
    }
 
-   footer .Logo-footer > img {
-      width: 150px;
-   } 
-
-   footer .links-footer li a {
+   footer .Links-footer li a {
       font-size: 1rem;
    }
 
-   footer .icons img {
+   footer .Icons img {
       width: 20px;
    }
 }
@@ -216,18 +224,6 @@ footer span {
    footer .Logo-footer {
       flex-direction: column;
       row-gap: 25px;
-   }
-   
-   footer .Logo-footer > img {
-      width: 150px;
-   } 
-
-   footer .links-footer li a {
-      font-size: 1rem;
-   }
-
-   footer .icons img {
-      width: 20px;
    }
 }
 
@@ -245,27 +241,19 @@ footer span {
    }
 
    footer .Logo-footer {
-      flex-direction: column;
       row-gap: 15px;
    }
-   
-   footer .Logo-footer > img {
-      width: 150px;
-   } 
 
-   footer .links-footer {
+   footer .Links-footer {
       flex-direction: column;
+      text-align: center;
    }
 
-   footer .links-footer li a {
+   footer .Links-footer li a {
       font-size: .8rem;
    }
 
-   footer .icons img {
-      width: 20px;
-   }
-
    footer .Direitos {
-      font-size: .6rem;
+      font-size: .7rem;
    }
 }
