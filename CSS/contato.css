@@ -139,10 +139,133 @@ main .formulario {
    transform: scale(0.9);
 }
 
+/* FOOTER */
+
+footer {
+   /* height: 160px; */
+   background-color: var(--corMarromEscura);
+   padding: 1rem 3rem;
+}
+
+footer .Logo-footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+footer .Logo-footer img {
+   width: 180px;
+} 
+
+footer .links-footer {
+   display: flex;
+}
+
+footer .links-footer li {
+   margin-inline: 10px;
+}
+
+footer .links-footer li a {
+   color: var(--corMarromClara);
+   font-size: 1.1rem;
+}
+
+footer .icons img {
+   width: 25px;
+   margin-inline: 5px;
+}
+
+footer .Direitos {
+   border-top: 1px solid var(--corMarromClara);
+   margin-top: 20px;
+   padding-top: 20px;
+   text-align: center;
+   color: var(--corMarromClara);
+   font-size: .9rem;
+}
+
+footer span {
+   color: #fff;
+}
+
 /* MEDIA QUERRY */
 @media (max-width: 768px) {
    main .formulario {
       grid-template-columns: 1fr;
       row-gap: 50px;
+   }
+
+   footer .Logo-footer > img {
+      width: 150px;
+   } 
+
+   footer .links-footer li a {
+      font-size: 1rem;
+   }
+
+   footer .icons img {
+      width: 20px;
+   }
+}
+
+@media (max-width: 690px) {
+   .forms div {
+      column-gap: 15px;
+   }
+
+   footer .Logo-footer {
+      flex-direction: column;
+      row-gap: 25px;
+   }
+   
+   footer .Logo-footer > img {
+      width: 150px;
+   } 
+
+   footer .links-footer li a {
+      font-size: 1rem;
+   }
+
+   footer .icons img {
+      width: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   main .formulario {
+      row-gap: 20px;
+   }
+
+   .donos-arqueogeo div > p {
+      font-size: .7rem;
+   }
+
+   footer {
+      padding: 1rem 1rem;
+   }
+
+   footer .Logo-footer {
+      flex-direction: column;
+      row-gap: 15px;
+   }
+   
+   footer .Logo-footer > img {
+      width: 150px;
+   } 
+
+   footer .links-footer {
+      flex-direction: column;
+   }
+
+   footer .links-footer li a {
+      font-size: .8rem;
+   }
+
+   footer .icons img {
+      width: 20px;
+   }
+
+   footer .Direitos {
+      font-size: .6rem;
    }
 }
