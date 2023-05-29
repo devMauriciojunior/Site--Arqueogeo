@@ -139,91 +139,18 @@ main .formulario {
    transform: scale(0.9);
 }
 
-/* FOOTER */
-
-footer {
-   background-color: var(--corMarromEscura);
-   padding: 1rem 3rem;
-}
-
-footer .Logo-footer {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-footer .Logo-footer .Logo-img {
-   width: 150px;
-} 
-
-footer .Links-footer {
-   display: flex;
-   row-gap: 10px;
-}
-
-footer .Links-footer li a {
-   color: var(--corMarromClara);
-   font-size: 1.1rem;
-   padding: 7px;
-}
-
-footer .Links-footer li a:hover  {
-   background-color: var(--corMarromClara);
-   color: var(--corMarromEscura);
-   border-radius: 5px;
-}
-
-footer .Icons {
-   display: flex;
-   column-gap: 10px;
-}
-
-footer .Icons img {
-   width: 25px;
-   cursor: pointer;
-}
-
-footer .Icons img:hover {
-   transform: scale(1.2)
-}
-
-footer .Direitos {
-   border-top: 1px solid var(--corMarromClara);
-   margin-top: 20px;
-   padding-top: 20px;
-   text-align: center;
-   color: var(--corMarromClara);
-   font-size: .9rem;
-}
-
-footer span {
-   color: #fff;
-}
-
 /* MEDIA QUERRY */
+
 @media (max-width: 768px) {
    main .formulario {
       grid-template-columns: 1fr;
       row-gap: 50px;
-   }
-
-   footer .Links-footer li a {
-      font-size: 1rem;
-   }
-
-   footer .Icons img {
-      width: 20px;
    }
 }
 
 @media (max-width: 690px) {
    .forms div {
       column-gap: 15px;
-   }
-
-   footer .Logo-footer {
-      flex-direction: column;
-      row-gap: 25px;
    }
 }
 
@@ -233,27 +160,6 @@ footer span {
    }
 
    .donos-arqueogeo div > p {
-      font-size: .7rem;
-   }
-
-   footer {
-      padding: 1rem 1rem;
-   }
-
-   footer .Logo-footer {
-      row-gap: 15px;
-   }
-
-   footer .Links-footer {
-      flex-direction: column;
-      text-align: center;
-   }
-
-   footer .Links-footer li a {
-      font-size: .8rem;
-   }
-
-   footer .Direitos {
       font-size: .7rem;
    }
 }
