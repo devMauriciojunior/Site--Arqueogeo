@@ -59,6 +59,10 @@ footer span {
    color: #fff;
 }
 
+footer span#anoAtual {
+   color: var(--corMarromClara);
+}
+
 /* MEDIA QUERRY */
 @media (max-width: 768px) {
    main .formulario {
