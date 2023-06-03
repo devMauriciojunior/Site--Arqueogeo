@@ -23,7 +23,6 @@
 
 body {
     background: url(../Imagens/Background-Topology.jpg) repeat-y center / cover;
-    height: 100vh;
 }
 
 *::-webkit-scrollbar {
