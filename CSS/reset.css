@@ -34,5 +34,5 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-    background: var(--corMarromEscura);
+    background: var(--cor4);
 }
