@@ -63,6 +63,34 @@ footer span#anoAtual {
    color: var(--corMarromClara);
 }
 
+/* BOTÃO VOLTAR AO TOPO */
+
+#VoltarTop {
+   cursor: pointer;
+   position: fixed;
+   z-index: 10;
+   bottom: 1rem;
+   right: 2rem;
+   background-color: rgba(140, 109, 74, 0.700);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: none;
+   display: grid;
+   place-items: center;
+}
+
+#VoltarTop:active {
+   transform: scale(0.90);
+}
+#VoltarTop:hover {
+   background-color: rgba(140, 109, 74, 0.850);
+}
+
+#VoltarTop img{
+   width: 25px;
+}
+
 /* MEDIA QUERRY */
 @media (max-width: 768px) {
    main .formulario {
@@ -76,6 +104,10 @@ footer span#anoAtual {
 
    footer .Icons img {
       width: 20px;
+   }
+
+   #VoltarTop {
+      display: none;
    }
 }
 

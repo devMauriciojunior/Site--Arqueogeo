@@ -21,6 +21,10 @@
     font-family: var(--fontPoppins);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: url(../Imagens/Background-Topology.jpg) no-repeat center / cover;
     background-attachment: fixed;
