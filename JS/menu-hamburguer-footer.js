@@ -1,11 +1,10 @@
 // MENU SUSPENSO
 const btn = document.querySelector('.hamburger');
 const menuSus = document.querySelector('.menu-suspenso');
-
-    btn.onclick = function () {
-        btn.classList.toggle('is-active');
-        menuSus.classList.toggle('is-active');
-    }
+btn.addEventListener('click', () => {
+    btn.classList.toggle('is-active');
+    menuSus.classList.toggle('is-active');
+})
 
 // ANO FOOTER
 const Ano = document.getElementById('anoAtual');
