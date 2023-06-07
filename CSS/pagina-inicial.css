@@ -51,27 +51,33 @@
 /* SERVIÇOS */
 
 .main .Serviços {
+   height: 90vh;
    padding: 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   row-gap: 40px;
+   row-gap: 70px;
 }
 
-.main .Serviços h1 {
+.Serviços .Serviços-textos h1 {
    font-size: 1.3rem;
    font-weight: 500;
+   text-align: center;
+   color: var(--corMarromEscura);
+   margin-bottom: 20px; 
+}
+
+.Serviços .Serviços-textos p {
    text-align: center;
    color: var(--corMarromEscura);
 }
 
 .Serviços .ServiçosRealizados {
-   width: 90%;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    align-items: center;
-   column-gap: 20px;
+   gap: 20px;
 }
 
 .Card {
@@ -131,12 +137,17 @@
    }
 
    .main .Serviços {
+      height: 110vh;
       padding: 20px;
-      row-gap: 25px;
+      row-gap: 60px;
    }
 
    .main .Serviços h1 {
       font-size: 1rem;
+   }
+
+   .Serviços .Serviços-textos p {
+      font-size: .8rem;
    }
 
    .main .Serviços .ServiçosRealizados {
@@ -155,7 +166,6 @@
 
 @media (max-width: 480px) {
    .main .Introducao {
-      height: 120vh;
       padding: 30px;
    }
 
@@ -163,8 +173,14 @@
       height: 100%;
       width: 100%;
    }
+
    .main .Introducao .intro-texto p {
       font-size: .85rem;
+   }
+
+   .main .Serviços {
+      min-height: 150vh;
+      row-gap: 25px;
    }
 
    .main .Serviços .ServiçosRealizados {
