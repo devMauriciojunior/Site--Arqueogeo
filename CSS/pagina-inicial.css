@@ -65,7 +65,7 @@
    font-weight: 500;
    text-align: center;
    color: var(--corMarromEscura);
-   margin-bottom: 20px; 
+   margin-bottom: 20px;
 }
 
 .Serviços .Serviços-textos p {
@@ -99,7 +99,7 @@
    width: 140px;
 }
 
-.main a {
+.main .Serviços a {
    text-align: center;
    font-size: .85rem;
    letter-spacing: 1px;
@@ -114,13 +114,123 @@
    transition: ease-out .5s;
 }
 
-.main a:hover {
+.main .Serviços a:hover {
    color: white;
    box-shadow: inset 0 -100px 0 0 var(--corMarromClara);
 }
 
-.main a:active {
+.main .Serviços a:active {
    transform: scale(0.9);
+}
+
+/* CLIENTES */
+
+.main .Clientes {
+   height: 70vh;
+   padding: 30px;
+   background-color: var(--cor1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.Clientes h2 {
+   font-size: 1.3rem;
+   font-weight: 500;
+   text-align: center;
+   color: var(--corMarromEscura);
+}
+
+.Clientes .Slider {
+   height: 250px;
+   margin: auto;
+   position: relative;
+   width: 100%;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+}
+
+.Slider::after, .Slider::before {
+   background: linear-gradient(to right, rgb(183, 146, 104) 0%, rgba(169, 134, 93, 0) 100%);
+   content: "";
+   height: 100%;
+   position: absolute;
+   width: 25%;
+   z-index: 2;
+}
+
+.Slider::before {
+   top: 0;
+   left: 0;
+}
+
+.Slider::after {
+   top: 0;
+   right: 0;
+   transform: rotateZ(180deg);
+}
+
+.Slider .Slider-track {
+   display: flex;
+   column-gap: 30px;
+   width: calc(270px * 10);
+   animation: scroll 30s linear infinite;
+}
+
+.Slider .Slider-track:hover {
+   animation-play-state: paused;
+}
+
+.Slider-track .Slide {
+   height: 200px;
+   width: 270px;
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   perspective: 180px;
+}
+
+.Slider-track .Slide img {
+   width: 100%;
+   transition: transform .6s;
+}
+.Slider-track .Slide img:hover {
+   transform: translateZ(25px);
+}
+
+.Clientes #VerTodos { 
+   text-align: center;
+   font-size: .85rem;
+   letter-spacing: 1px;
+   padding: 10px 0;
+   width: 140px;
+   color: var(--corMarromEscura);
+   background: transparent;
+   border-radius: 5px;
+   border: 1px solid var(--corMarromEscura);
+   box-shadow: inset 0 0 0 0 var(--corMarromClara);
+   cursor: pointer;
+   transition: ease-out .5s;
+}
+
+.Clientes #VerTodos:hover {
+   color: white;
+   box-shadow: inset 0 -100px 0 0 var(--corMarromEscura);
+}
+
+.Clientes #VerTodos:active {
+   transform: scale(0.9);
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(calc(-270px * 5));
+   }
 }
 
 /* MEDIA QUERRY */
@@ -162,6 +272,18 @@
    .Serviços .ServiçosRealizados .Card img {
       width: 120px;
    }
+
+   .main .Clientes h2 {
+      font-size: 1rem;
+   }
+
+   .Clientes .Slider .Slider-track{
+      width: calc(220px * 10);
+   }
+
+   .Clientes .Slider .Slider-track .Slide{
+      width: 220px;
+   }
 }
 
 @media (max-width: 480px) {
@@ -179,7 +301,7 @@
    }
 
    .main .Serviços {
-      min-height: 180vh;
+      min-height: 120vh;
       row-gap: 25px;
    }
 
