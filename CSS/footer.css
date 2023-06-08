@@ -71,7 +71,7 @@ footer span#anoAtual {
    z-index: 10;
    bottom: 1rem;
    right: 2rem;
-   background-color: rgba(140, 109, 74, 0.700);
+   background-color: #DEE2E6;
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -84,7 +84,7 @@ footer span#anoAtual {
    transform: scale(0.90);
 }
 #VoltarTop:hover {
-   background-color: rgba(140, 109, 74, 0.850);
+   background-color: rgba(220, 220, 220, 0.539);
 }
 
 #VoltarTop img{

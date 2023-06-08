@@ -1,8 +1,8 @@
 /* INTRODUÇÃO */
 .main .Introducao {
-   height: 80vh;
+   /* height: 80vh; */
    min-width: 90%;
-   padding: 64px;
+   padding: 80px 60px;
    background: url(../Imagens/Ruinas-arqueologicas2.png) no-repeat center / cover;
 }
 
@@ -17,9 +17,18 @@
    justify-content: center;
 }
 
+.main .Introducao .intro-texto h1 {
+   font-size: 1.5rem;
+   letter-spacing: 1.3px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   color: var(--corMarromEscura);
+}
+
 .main .Introducao .intro-texto p {
    font-size: .90rem;
    margin-bottom: 10px;
+   line-height: 22px;
    color: var(--corMarromEscura);
 }
 
@@ -51,8 +60,7 @@
 /* SERVIÇOS */
 
 .main .Serviços {
-   height: 90vh;
-   padding: 30px;
+   padding: 60px 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -60,9 +68,10 @@
    row-gap: 70px;
 }
 
-.Serviços .Serviços-textos h1 {
+.Serviços .Serviços-textos h2 {
    font-size: 1.3rem;
    font-weight: 500;
+   letter-spacing: 1.3px;
    text-align: center;
    color: var(--corMarromEscura);
    margin-bottom: 20px;
@@ -97,6 +106,7 @@
 
 .ServiçosRealizados .Card img {
    width: 140px;
+   margin-bottom: 15px;
 }
 
 .main .Serviços a {
@@ -126,18 +136,19 @@
 /* CLIENTES */
 
 .main .Clientes {
-   height: 70vh;
-   padding: 30px;
-   background-color: var(--cor1);
+   padding: 60px 30px;
+   background-color: var(--corCinzaClaro);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   row-gap: 20px;
 }
 
 .Clientes h2 {
    font-size: 1.3rem;
    font-weight: 500;
+   letter-spacing: 1.3px;
    text-align: center;
    color: var(--corMarromEscura);
 }
@@ -153,7 +164,7 @@
 }
 
 .Slider::after, .Slider::before {
-   background: linear-gradient(to right, rgb(183, 146, 104) 0%, rgba(169, 134, 93, 0) 100%);
+   background: linear-gradient(to right, #F8F9FA 0%, rgba(169, 134, 93, 0) 100%);
    content: "";
    height: 100%;
    position: absolute;
@@ -210,14 +221,14 @@
    background: transparent;
    border-radius: 5px;
    border: 1px solid var(--corMarromEscura);
-   box-shadow: inset 0 0 0 0 var(--corMarromClara);
+   box-shadow: inset 0 0 0 0 var(--corMarromEscura);
    cursor: pointer;
    transition: ease-out .5s;
 }
 
 .Clientes #VerTodos:hover {
    color: white;
-   box-shadow: inset 0 -100px 0 0 var(--corMarromEscura);
+   box-shadow: inset 0 -100px 0 0 var(--corMarromClara);
 }
 
 .Clientes #VerTodos:active {
@@ -237,8 +248,7 @@
 
 @media (max-width: 768px) {
    .main .Introducao {
-      height: 90vh;
-      padding: 40px;
+      padding: 60px 40px;
    }
 
    .main .Introducao .intro-texto {
@@ -247,8 +257,7 @@
    }
 
    .main .Serviços {
-      height: 110vh;
-      padding: 20px;
+      padding: 60px 20px;
       row-gap: 60px;
    }
 
@@ -271,6 +280,10 @@
 
    .Serviços .ServiçosRealizados .Card img {
       width: 120px;
+   }
+
+   .main .Clientes {
+      padding: 40px 20px;
    }
 
    .main .Clientes h2 {
@@ -301,8 +314,7 @@
    }
 
    .main .Serviços {
-      min-height: 120vh;
-      row-gap: 25px;
+      row-gap: 30px;
    }
 
    .main .Serviços .ServiçosRealizados {
