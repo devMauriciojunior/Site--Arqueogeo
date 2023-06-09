@@ -248,7 +248,7 @@
 
 @media (max-width: 768px) {
    .main .Introducao {
-      padding: 60px 40px;
+      padding: 90px 40px;
    }
 
    .main .Introducao .intro-texto {
@@ -300,9 +300,9 @@
 }
 
 @media (max-width: 480px) {
-   .main .Introducao {
+   /* .main .Introducao {
       padding: 30px;
-   }
+   } */
 
    .main .Introducao .intro-texto {
       height: 100%;
