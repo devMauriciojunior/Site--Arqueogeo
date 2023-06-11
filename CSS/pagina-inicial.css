@@ -1,3 +1,69 @@
+/* CARROSSEL */
+.Carrossel {
+   margin: 0 auto;
+   height: 60vh;
+   overflow: hidden;
+}
+
+.carrossel-content {
+   width: 400%;
+   /* height: auto; */
+   display: flex;
+}
+
+.carrossel-content input {
+   display: none;
+}
+
+.carrossel-box {
+   width: 25%;
+   /* height: auto; */
+   position: relative;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   transition: 1s;
+}
+
+.carrossel-box img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.nav-manual, .nav-auto {
+   position: absolute;
+   width: 100%;
+   margin-top: 33%;
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+   border: 1px solid var(--corMarromEscura);
+   padding: 7px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.nav-manual .manual-btn:hover {
+   background-color: var(--corMarromClara);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, 
+#radio2:checked ~ .nav-auto .auto-btn2	{
+   background-color: var(--corMarromEscura);
+}
+
+#radio1:checked ~ .primeiro {
+   margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+   margin-left: -25%;
+}
+
 /* INTRODUÇÃO */
 .main .Introducao {
    /* height: 80vh; */
