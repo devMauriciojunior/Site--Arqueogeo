@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 .Clientes {
     padding: 30px;
     display: flex;
     flex-direction: column;
-=======
-section .tituloClientes{
-    text-align: center;
-    margin: 10px;
->>>>>>> 6bc05a224ea2b65a34613d46aee9b4a216bb7b5d
 }
 
 .tituloClientes {
