@@ -1,67 +1,79 @@
-/* CARROSSEL */
-.Carrossel {
+.Sessão-Carrossel {
    margin: 0 auto;
-   height: 60vh;
+   height: 300px;
+   width: 100%;
    overflow: hidden;
 }
 
-.carrossel-content {
+.Carrossel-track {
    width: 400%;
-   /* height: auto; */
+   height: 300px;
    display: flex;
 }
 
-.carrossel-content input {
+.Carrossel-track input {
    display: none;
 }
 
-.carrossel-box {
+.carrossel {
    width: 25%;
-   /* height: auto; */
    position: relative;
-   text-align: center;
-   display: flex;
-   align-items: center;
    transition: 1s;
 }
 
-.carrossel-box img {
+.carrossel img {
    width: 100%;
-   object-fit: cover;
 }
 
-.nav-manual, .nav-auto {
-   position: absolute;
-   width: 100%;
-   margin-top: 33%;
-   display: flex;
-   justify-content: center;
-   gap: 5px;
-}
-
-.nav-manual .manual-btn, .nav-auto div {
+.manual-btn {
    border: 1px solid var(--corMarromEscura);
-   padding: 7px;
-   border-radius: 50%;
+   padding: 5px;
+   border-radius: 10px;
    cursor: pointer;
-   transition: .5s;
+   transition: 1s;
 }
 
-.nav-manual .manual-btn:hover {
-   background-color: var(--corMarromClara);
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, 
-#radio2:checked ~ .nav-auto .auto-btn2	{
-   background-color: var(--corMarromEscura);
+.manual-btn:hover {
+   background-color: var(--corMarromClara)
 }
 
 #radio1:checked ~ .primeiro {
-   margin-left: 0%;
+   margin-left: 0;
 }
 
 #radio2:checked ~ .primeiro {
    margin-left: -25%;
+}
+
+.manual-navigation {
+   margin-top: -40px;
+}
+
+.navigation-auto {
+   margin-top: 260px;
+}
+
+.navigation-auto, .manual-navigation {
+   position: absolute;
+   width: 100%;
+   gap: 7px;
+   display: flex;
+   justify-content: center;
+}
+
+.navigation-auto div {
+   border: 1px solid var(--corMarromEscura);
+   padding: 5px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 1s;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+   background-color: var(--corMarromEscura);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+   background-color: var(--corMarromEscura);
 }
 
 /* INTRODUÇÃO */
