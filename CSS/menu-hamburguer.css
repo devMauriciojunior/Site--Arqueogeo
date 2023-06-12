@@ -93,6 +93,7 @@
         justify-content: center;
         align-items: center;
         transition: width .5s cubic-bezier(0.175, 0.885, .70, 1.500);
+        z-index: 98;
     }
 
     .header .menu-suspenso.is-active {
@@ -148,6 +149,6 @@
     }
 
     .header .menu-suspenso li a {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }

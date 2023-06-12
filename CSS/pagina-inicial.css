@@ -284,6 +284,7 @@
 .Slider-track .Slide img {
    width: 100%;
    transition: transform .6s;
+   border-radius: 15px;
 }
 .Slider-track .Slide img:hover {
    transform: translateZ(25px);
