@@ -1,0 +1,29 @@
+.tituloClientes{
+    text-align: center;
+    margin: 10px;
+}
+
+.clientes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.clientes .imgClient
+{
+    margin: 15px;
+}
+
+.imgClient:hover img
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 2px 2px var(--cor2);
+    border: 1px solid var(--cor1);
+}
+
+.clientes .imgClient img
+{
+    width: 250px;
+    height: 250px;
+}
