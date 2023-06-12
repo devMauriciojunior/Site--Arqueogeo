@@ -17,16 +17,17 @@ VoltarTop.addEventListener('click', () => {
 });
 
 // CARROSSEL
-
-document.getElementById('radio1').checked = true;
 let conta = 1;
+document.getElementById('radio1').checked = true;
 
-setInterval(() => { ProximaImg() }, 3000);
+setInterval(() => {
+    nextImage();
+}, 5000);
 
-function ProximaImg() {
-    conta++;
-    if(conta > 2) {
+function nextImage() {
+    conta++
+    if (conta > 2) {
         conta = 1;
     }
     document.getElementById('radio'+conta).checked = true;
-};
+}
