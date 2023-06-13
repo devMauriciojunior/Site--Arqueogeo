@@ -1,28 +1,51 @@
-.Sessão-Carrossel {
+.main .Sessão-Carrossel {
    margin: 0 auto;
    height: 300px;
    width: 100%;
    overflow: hidden;
 }
 
-.Carrossel-track {
+.Sessão-Carrossel .Carrossel-track {
    width: 400%;
-   height: 300px;
+   height: 100%;
    display: flex;
 }
 
-.Carrossel-track input {
+.Sessão-Carrossel .Carrossel-track input {
    display: none;
 }
 
-.carrossel {
+.Carrossel-track .carrossel {
    width: 25%;
    position: relative;
    transition: 1s;
 }
 
+.carrossel h3 {
+   position: absolute;
+   font-size: 1rem;
+   line-height: 1.905rem;
+   letter-spacing: 1.5px;
+   padding: 10px;
+   border-radius: 5px;
+   color: var(--corMarromClara);
+   background-color: rgba(0, 0, 0, 0.500);
+   width: 50%;
+   left: 70px;
+   top: 20%;
+}
+
+.carrossel h3 span {
+   color: var(--corCinzaClaro);
+}
+
 .carrossel img {
    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.carrossel .ImgMobile {
+   display: none;
 }
 
 .manual-btn {
@@ -37,28 +60,13 @@
    background-color: var(--corMarromClara)
 }
 
-#radio1:checked ~ .primeiro {
-   margin-left: 0;
-}
-
-#radio2:checked ~ .primeiro {
-   margin-left: -25%;
-}
-
-.manual-navigation {
-   margin-top: -40px;
-}
-
-.navigation-auto {
-   margin-top: 260px;
-}
-
 .navigation-auto, .manual-navigation {
    position: absolute;
    width: 100%;
    gap: 7px;
    display: flex;
    justify-content: center;
+   bottom: 175px;
 }
 
 .navigation-auto div {
@@ -69,16 +77,22 @@
    transition: 1s;
 }
 
+#radio1:checked ~ .primeiro {
+   margin-left: 0;
+}
+#radio2:checked ~ .primeiro {
+   margin-left: -25%;
+}
+
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-   background-color: var(--corMarromEscura);
+   background-color: var(--cor2);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-   background-color: var(--corMarromEscura);
+   background-color: var(--cor2);
 }
 
 /* INTRODUÇÃO */
 .main .Introducao {
-   /* height: 80vh; */
    min-width: 90%;
    padding: 80px 60px;
    background: url(../Imagens/Ruinas-arqueologicas2.png) no-repeat center / cover;
@@ -326,6 +340,35 @@
 /* MEDIA QUERRY */
 
 @media (max-width: 768px) {
+   /* SESSÃO CARROSSEL */
+   .Sessão-Carrossel{
+      height: 450px;
+   }
+
+   .carrossel h3 {
+      font-size: .9rem;
+      line-height: 1.9rem;
+      letter-spacing: 1.5px;
+      width: unset;
+      left: 3rem;
+      right: 3rem;
+      top: 30%;
+   }
+
+   .carrossel .ImgMobile {
+      display: block;
+   }
+
+   .carrossel .ImgDesktop {
+      display: none;
+   }
+   
+   .navigation-auto, .manual-navigation {
+      bottom: 35px;
+   }
+
+   /* SESSÃO INTRODUÇÃO */
+
    .main .Introducao {
       padding: 90px 40px;
    }
@@ -334,6 +377,8 @@
       height: 100%;
       width: 65%;
    }
+
+   /* SESSÃO SERVIÇOS */
 
    .main .Serviços {
       padding: 60px 20px;
@@ -361,6 +406,8 @@
       width: 120px;
    }
 
+   /* SESSÃO CLIENTES */
+
    .main .Clientes {
       padding: 40px 20px;
    }
@@ -379,9 +426,19 @@
 }
 
 @media (max-width: 480px) {
-   /* .main .Introducao {
-      padding: 30px;
-   } */
+   /* SESSÃO CARROSSEL */
+
+   .carrossel h3 {
+      font-size: .7rem;
+      line-height: 1.9rem;
+      letter-spacing: 1px;
+      width: unset;
+      left: 2rem;
+      right: 2rem;
+      top: 20%;
+   }
+
+   /* SESSÃO INTRODUÇÃO */
 
    .main .Introducao .intro-texto {
       height: 100%;
@@ -391,6 +448,8 @@
    .main .Introducao .intro-texto p {
       font-size: .85rem;
    }
+
+   /* SESSÃO SERVIÇOS */
 
    .main .Serviços {
       row-gap: 30px;
