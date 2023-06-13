@@ -24,6 +24,7 @@
 .carrossel h3 {
    position: absolute;
    font-size: 1rem;
+   font-weight: 600;
    line-height: 1.905rem;
    letter-spacing: 1.5px;
    padding: 10px;
@@ -66,7 +67,14 @@
    gap: 7px;
    display: flex;
    justify-content: center;
-   bottom: 175px;
+}
+
+.manual-navigation {
+   margin-top: -40px;
+}
+
+.navigation-auto {
+   margin-top: 260px;
 }
 
 .navigation-auto div {
@@ -362,10 +370,6 @@
    .carrossel .ImgDesktop {
       display: none;
    }
-   
-   .navigation-auto, .manual-navigation {
-      bottom: 35px;
-   }
 
    /* SESSÃO INTRODUÇÃO */
 
@@ -435,7 +439,7 @@
       width: unset;
       left: 2rem;
       right: 2rem;
-      top: 20%;
+      top: 15%;
    }
 
    /* SESSÃO INTRODUÇÃO */
