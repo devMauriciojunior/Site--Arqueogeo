@@ -1,0 +1,36 @@
+main section{
+    margin: 10px auto;
+    text-align: center;
+}
+section h1{
+    color: var(--corMarromEscura);
+}
+
+section .areaTema{
+    border: 1px dashed var(--corMarromClara);
+    padding: 10px 20px;
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.areaTema h3{
+    font-size: 1.5;
+    color: var(--corMarromEscura);
+    padding: 10px;
+}
+.areaTema .TextoImg{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 700px;
+}
+
+.TextoImg p{
+    flex: 50%;
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+.TextoImg img{
+    width: 250px;
+}
