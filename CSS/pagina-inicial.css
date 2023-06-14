@@ -30,7 +30,7 @@
    padding: 10px;
    border-radius: 5px;
    color: var(--corMarromClara);
-   background-color: rgba(0, 0, 0, 0.500);
+   background-color: rgba(0, 0, 0, 0.430);
    width: 50%;
    left: 70px;
    top: 20%;
@@ -93,10 +93,10 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-   background-color: var(--cor2);
+   background-color: var(--corMarromClara);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-   background-color: var(--cor2);
+   background-color: var(--corMarromClara);
 }
 
 /* INTRODUÇÃO */
@@ -183,10 +183,11 @@
 }
 
 .Serviços .ServiçosRealizados {
+   /* height: 230px; */
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    align-items: center;
-   gap: 20px;
+   gap: 25px;
 }
 
 .Card {
@@ -194,18 +195,35 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   border: 1px solid var(--corMarromEscura);
+   border-radius: 2px;
+   width: 100%;
+   height: 100%;
+   padding: 40px 20px;
+   transition: .3s;
+   cursor: pointer;
+}
+
+.Card:hover {
+   background-color: var(--corMarromEscura);
+}
+.Card:hover h3 {
+   color: var(--corCinzaClaro);
+}
+.Card:hover img {
+   filter: brightness(0) invert(1) grayscale(1);
 }
 
 .Card h3 {
    word-wrap: break-word;
    text-align: center;
-   font-size: 1rem;
+   font-size: .9rem;
    font-weight: 500;
    color: var(--corMarromEscura);
 }
 
 .ServiçosRealizados .Card img {
-   width: 140px;
+   width: 130px;
    margin-bottom: 15px;
 }
 
@@ -321,7 +339,7 @@
    color: var(--corMarromEscura);
    background: transparent;
    border-radius: 5px;
-   border: 1px solid var(--corMarromEscura);
+   border: 1px solid var(--corMarromClara);
    box-shadow: inset 0 0 0 0 var(--corMarromEscura);
    cursor: pointer;
    transition: ease-out .5s;
