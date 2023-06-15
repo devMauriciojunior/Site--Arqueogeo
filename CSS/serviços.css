@@ -29,16 +29,15 @@ section .areaTema2{
 }
 .areaTema .TextoImg{
     display: flex;
-    flex-direction: row;
     margin: auto;
+    flex-direction: row;
 }
 
 .TextoImg p{
-    flex: 50%;
     text-align: justify;
     padding: 5px 20px;
 }
 
 .TextoImg img{
-    width: 250px;
+    width: 300px;
 }
