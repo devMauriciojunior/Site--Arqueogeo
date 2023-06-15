@@ -6,11 +6,20 @@ section h1{
     color: var(--corMarromEscura);
 }
 
-section .areaTema{
-    border: 1px dashed var(--corMarromClara);
+section .areaTema1{
+    background:linear-gradient(to right ,#F8F9FA ,#4e2e10);
     padding: 10px 20px;
     margin: 10px auto;
-    max-width: 1000px;
+    width: 100vw;
+    height: 100vh;
+}
+
+section .areaTema2{
+    background:linear-gradient(to left ,#F8F9FA ,#4e2e10);
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 .areaTema h3{
@@ -22,7 +31,6 @@ section .areaTema{
     display: flex;
     flex-direction: row;
     margin: auto;
-    max-width: 700px;
 }
 
 .TextoImg p{
