@@ -113,9 +113,10 @@ main .formulario {
    outline: none;
    border-bottom: 1px solid var(--corMarromEscura);
    background-color: #f0f0f0;
+   resize: both;
 }
 
-.forms input[type="submit"] {
+.forms button {
    margin-top: 15px;
    padding: 10px 30px;
    font-size: .9rem;
@@ -130,13 +131,20 @@ main .formulario {
    box-shadow: inset 0 0 0 0 var(--corMarromEscura);
 }
 
-.forms input[type="submit"]:hover {
+.forms button:hover {
    color: white;
    box-shadow: inset 0 -100px 0 0 var(--corMarromClara);
 }
 
 .forms input[type="submit"]:active {
    transform: scale(0.9);
+}
+
+.forms div input.invalido {
+   border-bottom: 1px solid red;
+}
+.forms textarea.invalido {
+   border: 1px solid red;
 }
 
 /* MEDIA QUERRY */
@@ -157,6 +165,7 @@ main .formulario {
 @media (max-width: 480px) {
    main .formulario {
       row-gap: 20px;
+      max-width: 100%;
    }
 
    .donos-arqueogeo div > p {
