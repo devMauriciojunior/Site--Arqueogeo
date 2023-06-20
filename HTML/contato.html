@@ -90,21 +90,29 @@
          </section>
 
          <form id="Formulario" class="forms" action="https://formsubmit.co/allteste130@gmail.com" method="POST">
-            <div>
+
+            <div class="inputs">
                <img src="../ICONS/user.svg" alt="">
-               <input type="text" id="InputNome" name="name" placeholder="Digite seu nome...">
+               <input type="text" id="InputNome" name="name">
+               <label class="label-input" for="InputNome">Nome</label>
             </div>
-            <div>
+
+            <div class="inputs">
                <img src="../ICONS/mail.svg" alt="">
-               <input type="email" id="InputEmail" name="email" placeholder="Digite seu e-mail...">
+               <input type="email" id="InputEmail" name="email">
+               <label class="label-input" for="InputEmail">Email</label>
             </div>
-            <div>
+            
+            <div class="inputs">
                <img src="../ICONS/phone.svg" alt="">
-               <input type="tel" id="InputTel" name="tel" placeholder="Digite seu telefone...">
+               <input type="tel" id="InputTel" name="tel">
+               <label class="label-input" for="InputTel">Telefone</label>
             </div>
-            <div>
+            
+            <div class="inputs">
                <textarea name="message" id="InputTxt" cols="100" rows="10" placeholder="Digite sua mensagem..."></textarea>
             </div>
+
             <button type="submit">Enviar</button>
          </form>
       </section>

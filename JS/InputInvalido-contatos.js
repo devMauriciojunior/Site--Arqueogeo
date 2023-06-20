@@ -4,44 +4,44 @@ const email = document.getElementById("InputEmail");
 const tel = document.getElementById("InputTel");
 const message = document.getElementById("InputTxt");
 
+function validade(element) {
+   element.classList.add('invalido');
+}
+
 form.addEventListener("submit", (event) => {
    event.preventDefault();
-   
+
    if(!nome.value) {
-      nome.classList.add('invalido')
-      return;
+      validade(nome);
    }
 
    if(!email.value) {
-      email.classList.add('invalido')
-      return;
+      validade(email);
    }
 
    if(!tel.value) {
-      tel.classList.add('invalido')
-      return;
+      validade(tel);
    }
 
    if(!message.value) {
-      message.classList.add('invalido')
-      return;
+      validade(message);
    }
 
    form.submit();
 })
 
 nome.addEventListener('input', () => {
-   nome.classList.remove('invalido')
+   nome.classList.remove('invalido');
 })
 
 email.addEventListener('input', () => {
-   email.classList.remove('invalido')
+   email.classList.remove('invalido');
 })
 
 tel.addEventListener('input', () => {
-   tel.classList.remove('invalido')
+   tel.classList.remove('invalido');
 })
 
 message.addEventListener('input', () => {
-   message.classList.remove('invalido')
+   message.classList.remove('invalido');
 })
