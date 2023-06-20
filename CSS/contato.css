@@ -21,8 +21,9 @@ main .titulo h1 {
 /* CONTADO DOS SOCIOS */
 
 main .formulario {
-   margin: 40px auto;
+   margin: 10px auto;
    max-width: 100%;
+   padding: 30px;
    display: grid;
    grid-template-columns: 1fr 2fr;
 }
@@ -74,10 +75,10 @@ main .formulario {
 }
 
 .forms .inputs {
-   width: 70%;
+   width: 75%;
    display: flex;
    align-items: center;
-   column-gap: 30px;
+   column-gap: 20px;
    margin: 20px 0px;
    position: relative;
 }
@@ -88,11 +89,11 @@ main .formulario {
 
 .forms .inputs input {
    border: none;
-   border-bottom: 1px solid var(--corMarromClara);
+   border: 1px solid var(--corMarromClara);
    padding: 10px 13px;
    width: 100%;
    font-size: .9rem;
-   transition: .4s;
+   transition: background-color .4s;
 }
 
 .forms .inputs input::placeholder {
@@ -101,20 +102,20 @@ main .formulario {
 
 .forms .inputs label {
    color: #a87b4da0;
+   background-color: #Fff;
+   border-radius: 2px;
    font-size: .9rem;
    font-weight: 500;
+   padding-inline: 3px;
    position: absolute;
-   pointer-events: none;
-   left: 4.7rem;
-   top: 11px;
+   left: 4rem;
+   top: -10px;
    transition: 0.2s ease all;
 }
 
-.inputs input:focus ~ label, 
-.inputs input:valid ~ label {
+.inputs input:focus ~ label {
+   background-color: #f0f0f0;
    color: var(--corMarromEscura);
-   top: -22px;
-   font-size: .705rem;
 }
 
 .forms .inputs input:focus-visible {
@@ -128,8 +129,9 @@ main .formulario {
    border: 1px solid var(--corMarromClara);
    padding: 10px;
    width: 100%;
-   font-size: .9rem;
-   transition: .5s;
+   font-size: 1rem;
+   transition: background-color .5s;
+   resize: vertical;
 }
 
 .forms .inputs textarea::placeholder {
@@ -141,7 +143,6 @@ main .formulario {
    outline: none;
    border-bottom: 1px solid var(--corMarromEscura);
    background-color: #f0f0f0;
-   resize: both;
 }
 
 .forms button[type="submit"] {
@@ -164,10 +165,7 @@ main .formulario {
    box-shadow: inset 0 -100px 0 0 var(--corMarromClara);
 }
 
-.forms .inputs input.invalido {
-   border-bottom: 1px solid red;
-}
-.forms textarea.invalido {
+.forms .inputs .invalido {
    border: 1px solid red;
 }
 
@@ -177,11 +175,12 @@ main .formulario {
    main .formulario {
       grid-template-columns: 1fr;
       row-gap: 50px;
+      padding: 0;
    }
 }
 
 @media (max-width: 690px) {
-   .forms div {
+   .forms .inputs {
       column-gap: 15px;
    }
 }

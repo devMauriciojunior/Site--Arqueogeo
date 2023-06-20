@@ -13,18 +13,22 @@ form.addEventListener("submit", (event) => {
 
    if(!nome.value) {
       validade(nome);
+      return;
    }
 
    if(!email.value) {
       validade(email);
+      return;
    }
 
    if(!tel.value) {
       validade(tel);
+      return;
    }
 
    if(!message.value) {
       validade(message);
+      return;
    }
 
    form.submit();
