@@ -1,55 +1,73 @@
-main section{
-    margin: 10px auto;
+main {
     text-align: center;
 }
-section h1{
-    color: var(--corMarromEscura);
+
+main .areaTema1 .titulo h1 {
+    color: var(--corMarromClara);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
 }
 
-section .areaTema1{
-    background:linear-gradient(to right ,#F8F9FA ,#4e2e10);
+main .areaTema1 {
+    padding: 30px 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: url(../Imagens/Serviços-Imagens/bg-muda.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.areaTema1 h2, .areaTema2 h2, .areaTema3 h2, .areaTema4 h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0;
+    color: var(--corMarromClara);
+}
+
+.areaTema2 {
     padding: 10px 20px;
-    margin: 10px auto;
-    width: 100vw;
+    margin: 0 auto;
     min-height: 100vh;
 }
 
-section .areaTema1 h2{
-    font-size: 0.7cm;
-    margin: 10px auto;
-}
-
-section .areaTema2{
-    background:linear-gradient(to left ,#F8F9FA ,#4e2e10);
-    padding: 10px 20px;
-    margin: 10px auto;
-    width: 100vw;
-    min-height: 100vh;
-    
-}
-
-section .areaTema2 h2{
-    font-size: 0.7cm;
-    margin: 10px auto;
-}
-
-.TextoImg{
+.TextoImg {
     display: flex;
-    margin: 10 auto;
-    justify-content: space-evenly;
+    margin: 10px auto;
+    justify-content: space-around;
 }
 
-.TextoImg p{
-    text-align: justify;
+.TextoImg .textos {
+    max-width: 65%;
+}
+
+.TextoImg .textos p {
+    text-align: start;
+    line-height: 1.7rem;
     padding: 5px 20px;
+    color: var(--corCinzaClaro);
 }
 
-.TextoImg img{
+.TextoImg .textos p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.TextoImg .textos p strong {
+    color: var(--corMarromClara);
+}
+
+.TextoImg .textos h3 {
+    text-align: center;
+    font-weight: 500;
+    margin: 20px;
+    color: var(--corCinzaClaro);
+}
+
+.TextoImg .imagem img {
     width: 300px;
     align-items: baseline;
 }
 
-.textos details{
+.textos details {
     margin: 15px;
     border: var(--corMarromEscura) solid 2px;
     border-radius: 5px;
@@ -58,8 +76,8 @@ section .areaTema2 h2{
     max-width: 700px;
 }
 
-.textos details{
-    margin: 10px auto;
+.textos details {
+    margin: 0 auto;
     padding: 5px;
 }
 
