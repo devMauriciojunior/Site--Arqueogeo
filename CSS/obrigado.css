@@ -1,9 +1,10 @@
 body {
-   height: 100vh;
+   height: 97vh;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   overflow: hidden;
 }
 
 h1 {
