@@ -2,69 +2,132 @@ main {
     text-align: center;
 }
 
-main .areaTema1 .titulo h1 {
-    color: var(--corMarromClara);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 15px 0;
-}
-
-main .areaTema1 {
-    padding: 30px 20px;
+/* SESSÃO LICENCIAMENTO AMBIENTAL */
+main .LicenAmbiental {
+    padding: 30px;
     margin: 0 auto;
     min-height: 100vh;
     background: url(../Imagens/Serviços-Imagens/bg-muda.jpg) no-repeat center / cover;
     background-attachment: fixed;
 }
 
-.areaTema1 h2, .areaTema2 h2, .areaTema3 h2, .areaTema4 h2{
-    font-size: 1.3rem;
+.LicenAmbiental .titulo h1 {
+    color: var(--corMarromClara);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.LicenAmbiental .TextoImg {
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.LicenAmbiental h2, .PatrimonioCultural h2, .AreasContaminadas h2, .ServCartograficos h2{
+    font-size: 1.4rem;
     font-weight: 500;
     margin: 10px 0;
     color: var(--corMarromClara);
 }
 
-.areaTema2 {
-    padding: 10px 20px;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.TextoImg {
-    display: flex;
-    margin: 10px auto;
-    justify-content: space-around;
-}
-
-.TextoImg .textos {
-    max-width: 65%;
-}
-
-.TextoImg .textos p {
-    text-align: start;
-    line-height: 1.7rem;
-    padding: 5px 20px;
-    color: var(--corCinzaClaro);
-}
-
-.TextoImg .textos p:not(:last-child) {
-    margin-bottom: 15px;
-}
-
-.TextoImg .textos p strong {
-    color: var(--corMarromClara);
-}
-
-.TextoImg .textos h3 {
+.LicenAmbiental .TextoImg .textos h3 {
     text-align: center;
     font-weight: 500;
     margin: 20px;
     color: var(--corCinzaClaro);
 }
 
-.TextoImg .imagem img {
+.LicenAmbiental .TextoImg .textos {
+    max-width: 65%;
+}
+
+.LicenAmbiental .TextoImg .textos p {
+    text-align: start;
+    line-height: 1.7rem;
+    color: var(--corCinzaClaro);
+}
+
+.LicenAmbiental .TextoImg .textos p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.LicenAmbiental .TextoImg .textos p strong {
+    color: var(--corMarromClara);
+}
+
+/* SESSÃO PATRIMÔNIO CULTURAL E ARQUEOLÓGICO */
+
+main .PatrimonioCultural {
+    padding: 30px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.PatrimonioCultural .TextoImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    height: 100%;
+}
+
+.PatrimonioCultural .TextoImg p {
+    text-align: start;
+    line-height: 1.7rem;
+    color: var(--corMarromEscura);
+    max-width: 50%;
+}
+
+.PatrimonioCultural .TextoImg .imagem {
     width: 300px;
-    align-items: baseline;
+}
+
+.PatrimonioCultural .TextoImg .imagem img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* SESSÃO AREAS CONTAMINADAS */
+
+main .AreasContaminadas {
+    padding: 30px;
+    background: url(../Imagens/Serviços-Imagens/bg-AreaContaminada1.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.AreasContaminadas .TextoImg {
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.AreasContaminadas .TextoImg p{
+    text-align: start;
+    line-height: 1.7rem;
+    color: var(--corCinzaClaro);
+    max-width: 70%;
+}
+
+.AreasContaminadas .TextoImg .imagem {
+    width: 300px;
+}
+
+.AreasContaminadas .TextoImg .imagem img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* SESSÃO SERVIÇOS CARTOGRÁFICOS */
+
+.ServCartograficos {
+    padding: 30px;
+    height: 100vh;
 }
 
 .textos details {
