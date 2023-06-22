@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="shortcut icon" href="ICONS/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/hamburgers.css">
+    <link rel="stylesheet" href="../CSS/menu-hamburguer.css">
+    <link rel="stylesheet" href="../CSS/clientes.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/serviços.css">
+
+    <!-- JS -->
+    <script defer src="../JS/menu-hamburguer-footer.js"></script>
+    <title>Arqueogeo - Nossos Serviços</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="Logo-Arqueogeo">
+                <a href="../index.html"><img src="../Imagens/Logo_ArqueoGeo_Hor_Cor_Tag_.png" alt="Logo-Arqueogeo"></a>
+            </div>
+
+            <ul class="links">
+                <li><a href="Arqueogeo.html">A Arqueogeo</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+
+        <div class="menu-suspenso">
+            <li><a href="Arqueogeo.html">A Arqueogeo</a></li>
+            <li><a href="serviços.html">Serviços</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>A Arqueogeo atua em diferentes áreas, sendo:</h1>
+            <div class="areaTema1">
+                <h2>Licenciamento Ambiental</h2>
+                <div class="TextoImg">
+                    <div class="textos">
+                        <h3>O licenciamento Ambiental possui 3 etapas de ação, sendo estas:</h3>
+                        <p><strong>Licença Prévia:</strong> Concedida na fase preliminar do planejamento do empreendimento ou atividade, aprovando sua concepção e localização, atestando a viabilidade ambiental e estabelecendo os requisitos básicos e condicionantes a serem atendidos nas próximas fases de sua implementação.</p>
+                        <p><strong>Licença de Instalação:</strong> Autoriza o início da obra e a instalação do empreendimento ou atividade, de acordo com as especificações constantes nos projetos aprovados, sendo estabelecidas as medidas de controle ambiental e demais condicionantes pertinentes.</p>
+                        <p><strong>Licença de Operação:</strong> Autoriza a operação da atividade ou empreendimento, podendo estar associada ao cumprimento da licença ambiental anterior ou à regularização da atividade, sendo estabelecidas as medidas de controle ambiental e demais condicionantes para a operação.</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="../Imagens/Serviços-Imagens/licenças.png" alt="Tipos de licença">
+                    </div>
+                </div>
+            </div>
+
+            <div class="areaTema2">
+                <h2>Gestão do Patrimônio Cultural e Arqueológico</h2>
+                <div class="TextoImg">
+                    <div class="imagem">
+                        <img src="../Imagens/Serviços-Imagens/Rupestre.jpg" alt="Gestão do Patrimônio Cultural e Arqueológico">
+                    </div>
+                    <p>Se trata de gestão e manuseio dos Patrimônio Culturais e/ou Arqueológico, sendo estes: vestígios positivos de ocupação humana, sítios identificados como cemitérios, sepulturas ou locais de pouso prolongado ou de aldeamento, “estações” e “cerâmicos”, as grutas, lapas e abrigos sob rocha, inscrições rupestres ou locais com sulcos de polimento, os sambaquis e outros vestígios de atividade humana.</p>
+                </div>
+            </div>
+
+            <div class="areaTema1">
+                <h2>Gerenciamento de Áreas Contaminadas</h2>
+                <div class="TextoImg">
+                    <p>O Gerenciamento de Áreas Contaminadas (GAC) é o conjunto de ações de identificação, caracterização e implementação de medidas de intervenção em AC localizadas em uma região de interesse</p>
+                    <div class="imagem">
+                        <img src="../Imagens/Serviços-Imagens/Gerenc. Areas Contaminadas.jpg" alt="Gerenciamento de Áreas Contaminadas">
+                    </div>
+                </div>
+            </div>
+
+            <div class="areaTema2">
+                <h2>Serviços Cartográficos</h2>
+                <div class="TextoImg">
+                    <div class="imagem">
+                    </div>
+                    <div class="textos">
+                        <button id="RegFund" onclick="Ativarr()" class="RegFund">Regularização Fundiária:</button>
+                        <div class="modal-container" id="modal-container">
+                            <div class="modal" id="ativando">
+                                <img src="../Imagens/Serviços-Imagens/ServCartograficos.jpg" alt="Serviços Cartográficos">
+                                <div>
+                                    <p><strong>Regularização Fundiária:</strong> é um processo jurídico que visa legalizar a situação de propriedades rurais ou urbanas que se encontram em condições irregulares, seja por falta de registro, documentação inadequada ou outros problemas legais.</p>
+                                </div>
+                                <button id="fechar" class="fechar" onclick="Fecharr()"><img src="../ICONS/x.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <details>
+                            <summary><strong>Georreferenciamento de imóveis /Certificação INCRA:</strong></summary>
+                            <p>é o processo para definir a forma, dimensão e localização de um imóvel rural, através de métodos de levantamento topográfico e posteriormente, enviar os dados ao SIGEF, uma plataforma online na qual o perímetro das propriedade rurais são georreferenciados ao Sistema Geodésico Brasileiro no datum SIRGAS2000.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Levantamento Planimétrico e Planialtimétrico Cadastral:</strong></summary>
+                            <p>é a representação do terreno em formato digital usando projeções verticais para demarcar as curvas de nível do local avaliado e identificar os limites do imóvel.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Cadastro Ambiental Rural (CAR):</strong></summary>
+                            <p>é um registro público eletrônico nacional, obrigatório para todos os imóveis rurais, com a finalidade de integrar as informações ambientais das propriedades e posses rurais, compondo base de dados para controle, monitoramento, planejamento ambiental e econômico e combate ao desmatamento.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Implantação de marcos Geodésicos:</strong></summary>
+                            <p>Marcos Geodesicos são um ponto fixado no solo em que está gravado um código que remete a latitude, longitude e altitude do local a partir do sistema de referências geocêntrico para as Américas.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Desmembramento e Retificação de áreas:</strong></summary>
+                            <p>Desmembramento se trata de poder dividir a propriedade em duas ou mais frações, desde que tenha aproveitamento do sistema viário enquanto que Retificação de áreas é quando o terreno em sua posse está registrado com uma metragem maior ou menor daquela em que se apresenta na realidade, então há necessidade de redimensionar o projeto.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Recuperação de áreas degradadas - SARE:</strong></summary>
+                            <p>É o processo de auxílio ao restabelecimento de um ecossistema que foi degradado, danificado ou destruído</p>
+                        </details>
+                        <details>
+                            <summary><strong>Projeto de Loteamento Rural e Urbano:</strong></summary>
+                            <p>Loteamento se refere a divisão de terrenos em lotes destinados à edificação, com aberturas de novas vias de circulação, de logradouros públicos ou prolongamento, modificação ou ampliação das vias já existentes.</p>
+                        </details>
+                        <details>
+                            <summary><strong>Levantamento Topográfico Arbitrário:</strong></summary>
+                            <p>É o ato de localizar e mapear todas as características da superfície de um terreno.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="Logo-footer">
+            <img class="Logo-img" src="../Imagens/Logo_ArqueoGeo_Vert_Branco_Tag.png" alt="">
+            <ul class="Links-footer">
+                <li><a href="arqueogeo.html">A Arqueogeo</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+            <div class="Icons">
+                <a href="https://www.instagram.com/arqueo.geo/" target="_blank">
+                    <img src="../ICONS/instagram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../ICONS/linkedin.svg" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="Direitos">
+            <p><span>&copy;</span> <span id="anoAtual"></span> Arqueogeo - Todos os direitos reservados</p>
+        </section>
+        <button id="VoltarTop"><img src="../ICONS/arrowUp.png" alt=""></button>
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+</html>
