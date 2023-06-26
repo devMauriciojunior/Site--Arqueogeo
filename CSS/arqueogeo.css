@@ -91,7 +91,7 @@ main .Equipe {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 30px 10px;
 }
 
 .Equipe .Socio-box {
