@@ -168,12 +168,10 @@ main .AreasContaminadas {
     position: relative;
 }
 
-.modal2{
-    width: 500px;
-    height: 500px;
-    background-color: #FFF;
+.modal .imgConteudo{
+    width: 300px;
     padding: 10px;
-    box-shadow: 0 0 10px black;
+    margin: 10px auto;
 }
 
 .modal-container{
