@@ -25,7 +25,7 @@ main .LicenAmbiental {
     gap: 30px;
 }
 
-.LicenAmbiental h2, .PatrimonioCultural h2, .AreasContaminadas h2, .ServCartograficos h2{
+.LicenAmbiental h2, .PatrimonioCultural h2, .AreasContaminadas h2, .ServCartograficos h2 {
     font-size: 1.4rem;
     font-weight: 500;
     margin: 10px 0;
@@ -57,12 +57,22 @@ main .LicenAmbiental {
     color: var(--corMarromClara);
 }
 
+.LicenAmbiental .TextoImg .imagem {
+    width: 350px;
+    height: 430px;
+}
+
+.LicenAmbiental .TextoImg .imagem img {
+    width: 100%;
+    height: 100%;
+}
+
 /* SESSÃO PATRIMÔNIO CULTURAL E ARQUEOLÓGICO */
 
 main .PatrimonioCultural {
     padding: 30px;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .PatrimonioCultural .TextoImg {
@@ -71,22 +81,27 @@ main .PatrimonioCultural {
     justify-content: space-around;
     gap: 50px;
     height: 100%;
+    margin: 20px auto;
+}
+
+.PatrimonioCultural .TextoImg .textos {
+    max-width: 50%;
 }
 
 .PatrimonioCultural .TextoImg p {
     text-align: start;
     line-height: 1.7rem;
     color: var(--corMarromEscura);
-    max-width: 50%;
 }
 
 .PatrimonioCultural .TextoImg .imagem {
-    width: 300px;
+    width: 350px;
+    height: 400px;
 }
 
 .PatrimonioCultural .TextoImg .imagem img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -96,7 +111,7 @@ main .AreasContaminadas {
     padding: 30px;
     background: url(../Imagens/Serviços-Imagens/bg-AreaContaminada1.jpg) no-repeat center / cover;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .AreasContaminadas .TextoImg {
@@ -106,29 +121,39 @@ main .AreasContaminadas {
     gap: 30px;
 }
 
+.AreasContaminadas .TextoImg .textos {
+    max-width: 50%;
+}
+
 .AreasContaminadas .TextoImg p{
     text-align: start;
     line-height: 1.7rem;
     color: var(--corCinzaClaro);
-    max-width: 70%;
 }
 
 .AreasContaminadas .TextoImg .imagem {
-    width: 300px;
+    width: 350px;
+    height: 400px;
 }
 
 .AreasContaminadas .TextoImg .imagem img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
 }
 
 /* SESSÃO SERVIÇOS CARTOGRÁFICOS */
 
-.ServCartograficos {
+main .ServCartograficos {
     padding: 30px;
-    display: grid;
+}
 
+.ServCartograficos .titulo p {
+    color: var(--corMarromEscura);
+}
+
+.ServCartograficos .TextoImg {
+    margin-top: 20px;
 }
 
 .ServCartograficos .grid{
@@ -137,47 +162,51 @@ main .AreasContaminadas {
     grid-template-rows: repeat(3,1fr);
 }
 
-.textos details {
-    margin: 15px;
-    border: var(--corMarromEscura) solid 2px;
-    border-radius: 5px;
-    background-color: var(--corCinzaClaro);
-    text-align: center;
-    max-width: 700px;
-}
-
-.textos details {
-    margin: 0 auto;
-    padding: 5px;
-}
-
 
 /* Teste modal */
 
 .RegFund{
-    margin: 15px;
-    border: var(--corMarromEscura) solid 2px;
+    margin: 15px 0;
+    border: none;
     border-radius: 5px;
     background-color: var(--corCinzaClaro);
-    text-align: center;
+    color: var(--corMarromEscura);
     width: 300px;
     height: 120px;
+    text-align: center;
     font-size: 1rem;
+    font-weight: 500;
     padding: 10px;
+    box-shadow: 0 5px 5px rgba(132, 79, 29, 0.300);
+    cursor: pointer;
 }
 
-.textos .modal{
+.RegFund:hover {
+    background-color: var(--cor1);
+    transition: .3s;
+}
+
+.textos .modal {
     margin: auto;
-    border: var(--corMarromEscura) solid 2px;
-    border-radius: 5px;
+    border-radius: 7px;
     background-color: var(--corCinzaClaro);
     max-width: 600px;
-    padding: 10px;
+    padding: 30px;
     position: relative;
 }
 
+.textos .modal > div p {
+    text-align: start;
+    line-height: 1.7rem;
+    color: var(--corMarromEscura);
+}
+
+.textos .modal > div strong {
+    color: var(--corMarromClara);
+}
+
 .modal .imgConteudo{
-    width: 300px;
+    width: 70%;
     padding: 10px;
     margin: 10px auto;
 }
@@ -225,25 +254,98 @@ main .AreasContaminadas {
 }
 
 @media (max-width: 768px){
-    .ServCartograficos .grid{
+    .LicenAmbiental .TextoImg {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .LicenAmbiental .TextoImg .textos {
+        max-width: 100%;
+    }
+
+    .LicenAmbiental .TextoImg .imagem {
+        max-width: 80%;
+    }
+
+    .PatrimonioCultural .TextoImg {
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .PatrimonioCultural .TextoImg .textos {
+        max-width: 100%;
+    }
+
+    .PatrimonioCultural .TextoImg .imagem {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .AreasContaminadas .TextoImg {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .AreasContaminadas .TextoImg .textos {
+        max-width: 100%;
+    }
+
+    .ServCartograficos .grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9,1fr);
     }
 
-    .RegFund{
-        width: auto;
-        max-width: 300px;
+    .RegFund {
+        width: 300px;
     }
-    .TextoImg{
-        display: flex;
-        flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .LicenAmbiental .titulo h1 {
+        font-size: 1.3rem;
     }
-    .TextoImg .textos{
-        align-items: center;
-        justify-content: center;
+
+    .LicenAmbiental h2, .PatrimonioCultural h2, .AreasContaminadas h2, .ServCartograficos h2 {
+        font-size: 1.1rem;
     }
-    .TextoImg .imgLicenca{
+
+    .LicenAmbiental .TextoImg .textos h3 {
+        font-size: .9rem;
+    }
+    
+    .LicenAmbiental .TextoImg .textos p {
+        font-size: .8rem;
+    }
+
+    .LicenAmbiental .TextoImg .imagem {
+        height: 250px;
+        width: 60%;
+    }
+
+    .PatrimonioCultural .TextoImg .imagem {
+        height: 250px;
+        width: 60%;
+    }
+
+    .AreasContaminadas .TextoImg .imagem {
+        height: 250px;
+        width: 60%;
+    }
+
+    .RegFund {
+        font-size: .8rem;
+        font-weight: 400;
+        width: 80%;
+        height: 100px;
+    }
+
+    .textos .modal {
         max-width: 300px;
     }
 
+    .modal .imgConteudo{
+        width: 100%;
+    }
 }
