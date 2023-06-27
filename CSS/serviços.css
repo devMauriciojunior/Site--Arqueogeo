@@ -127,7 +127,14 @@ main .AreasContaminadas {
 
 .ServCartograficos {
     padding: 30px;
-    height: 100vh;
+    display: grid;
+
+}
+
+.ServCartograficos .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
 }
 
 .textos details {
@@ -153,7 +160,8 @@ main .AreasContaminadas {
     border-radius: 5px;
     background-color: var(--corCinzaClaro);
     text-align: center;
-    max-width: 700px;
+    width: 300px;
+    height: 120px;
     font-size: 1rem;
     padding: 10px;
 }
@@ -207,4 +215,35 @@ main .AreasContaminadas {
 
 .fechar img{
     width: 16px;
+}
+
+@media (max-width: 1025px){
+    .ServCartograficos .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .ServCartograficos .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9,1fr);
+    }
+
+    .RegFund{
+        width: auto;
+        max-width: 300px;
+    }
+    .TextoImg{
+        display: flex;
+        flex-direction: column;
+    }
+    .TextoImg .textos{
+        align-items: center;
+        justify-content: center;
+    }
+    .TextoImg .imgLicenca{
+        max-width: 300px;
+    }
+
 }
