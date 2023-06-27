@@ -99,7 +99,7 @@ footer span#anoAtual {
    }
 
    footer .Links-footer li a {
-      font-size: 1rem;
+      font-size: .8rem;
    }
 
    footer .Icons img {
@@ -142,10 +142,6 @@ footer span#anoAtual {
    footer .Links-footer {
       flex-direction: column;
       text-align: center;
-   }
-
-   footer .Links-footer li a {
-      font-size: .8rem;
    }
 
    footer .Direitos {
