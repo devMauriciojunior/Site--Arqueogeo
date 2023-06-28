@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
-    background: url(../Imagens/background-tree.jpg) no-repeat center / cover;
+    background: url(../Imagens/ArqueoGeo-Imagens/background-tree.jpg) no-repeat center / cover;
     background-attachment: fixed;
 }
 
@@ -80,6 +80,56 @@
 .Sessão-MVV .Coluna p, ul {
     line-height: 1.7rem;
     font-size: .85rem;
+}
+
+/* SESSÃO EQUIPE */
+
+main .Equipe {
+    margin: 0 auto;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Equipe .Socio-box {
+    width: 430px;
+    padding: 20px;
+}
+
+.Equipe .Socio-box .Img-container {
+    width: 100%;
+    height: 390px;
+    margin: 0 auto;
+}
+
+.Equipe .Socio-box .Img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.Equipe .Socio-box .texto-box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.Equipe .Socio-box .texto-box h3 {
+    color: var(--corMarromEscura);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Equipe .Socio-box .texto-box p {
+    color: var(--corMarromEscura);
+    font-size: .9rem;
+    text-align: start;
+    line-height: 1.7rem;
 }
 
 /* MEDIA QUERRY */
@@ -122,6 +172,20 @@
         padding: 25px;
         width: 70%;
     }
+
+    main .Equipe {
+        padding: 50px 30px;
+
+    }
+
+    .Equipe .Socio-box {
+        width: 470px;
+    }
+
+    .Equipe .Socio-box .Img-container {
+        width: 85%;
+        height: 410px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -159,5 +223,19 @@
     .Sessão-MVV .Coluna p, ul {
         line-height: 1.3rem;
         font-size: .8rem;
+    }
+
+    .Equipe .Socio-box .Img-container {
+        width: 100%;
+        height: 330px;
+    }
+
+    .Equipe .Socio-box .texto-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    .Equipe .Socio-box .texto-box p {
+        font-size: .8rem;
+        line-height: 1.5rem;
     }
 }
