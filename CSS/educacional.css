@@ -1,0 +1,201 @@
+/* SESSÃO TITULO */
+main .Titulo {
+    min-height: 25vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.Titulo h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--corMarromEscura);
+}
+
+.Titulo h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+    color: var(--corMarromEscura);
+}
+
+.Titulo p {
+    font-size: 1rem;
+    color: var(--corMarromEscura);
+}
+
+/* SESSÃO DOWNLOAD */
+
+main .Download {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.Download .Textos {
+    max-width: 60%;
+}
+
+.Download .Textos h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--corMarromEscura);
+    margin-bottom: .8rem;
+}
+
+.Download .Textos p{
+    color: var(--corMarromEscura);
+    line-height: 1.7rem;
+}
+
+.Download .Download-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Download-container .button {
+    position: relative;
+    width: 155px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--corMarromEscura);
+    overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 46px;
+    background-color: var(--corMarromClara);
+    border: .5px solid var(--corMarromEscura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    fill: #fff;
+}
+
+.button:hover {
+    background: var(--corMarromEscura);
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 155px;
+    transform: translateX(0);
+}
+
+.button:hover .svg {
+    fill: var(--corMarromEscura);
+}
+
+.button:active .button__icon {
+    background-color: var(--corMarromClara);
+}
+
+.button:active {
+    border: 1px solid var(--corMarromEscura);
+}
+
+/* SESSÃO VIDEOS */
+
+main .Videos {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.Videos h3 {
+    color: var(--corMarromEscura);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Videos .Video {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 70%;
+    height: 445px;
+}
+
+.Videos .Video iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERRY */
+
+@media (max-width: 768px) {
+    main .Download {
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .Download .Textos {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .Videos .Video {
+        margin: 1rem auto;
+        width: 80%;
+        height: 315px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Titulo h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .Titulo h2 {
+        font-size: 1.1rem;
+        margin-bottom: .7rem;
+    }
+    .Titulo p, .Download .Textos p {
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+    .Download .Textos h3, .Videos h3 {
+        font-size: 1.1rem;
+    }
+
+    main .Videos {
+        min-height: 70vh;
+    }
+
+    .Videos .Video {
+        margin: 1rem auto;
+        width: 100%;
+        height: 170px;
+    }
+}
