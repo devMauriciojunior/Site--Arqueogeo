@@ -195,11 +195,11 @@ main .ServCartograficos {
     position: relative;
 }
 
-<<<<<<< HEAD
 .modal .imgConteudo{
     width: 350px;
     padding: 20px;
-=======
+}
+
 .textos .modal > div p {
     text-align: start;
     line-height: 1.7rem;
@@ -214,7 +214,6 @@ main .ServCartograficos {
     width: 70%;
     padding: 10px;
     margin: 10px auto;
->>>>>>> 2ad75fb22c1bf0b96be59e2447be96ce10ef648c
 }
 
 .modal-container{
