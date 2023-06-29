@@ -26,7 +26,7 @@ main .LicenAmbiental {
 }
 
 .LicenAmbiental h2, .PatrimonioCultural h2, .AreasContaminadas h2, .ServCartograficos h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 10px 0;
     color: var(--corMarromClara);
@@ -44,6 +44,7 @@ main .LicenAmbiental {
 }
 
 .LicenAmbiental .TextoImg .textos p {
+    font-size: 1.1rem;
     text-align: start;
     line-height: 1.7rem;
     color: var(--corCinzaClaro);
@@ -73,6 +74,8 @@ main .PatrimonioCultural {
     padding: 30px;
     margin: 0 auto;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .PatrimonioCultural .TextoImg {
@@ -86,9 +89,13 @@ main .PatrimonioCultural {
 
 .PatrimonioCultural .TextoImg .textos {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .PatrimonioCultural .TextoImg p {
+    font-size: 1.1rem;
     text-align: start;
     line-height: 1.7rem;
     color: var(--corMarromEscura);
@@ -112,6 +119,8 @@ main .AreasContaminadas {
     background: url(../Imagens/Serviços-Imagens/bg-AreaContaminada1.jpg) no-repeat center / cover;
     background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .AreasContaminadas .TextoImg {
@@ -123,9 +132,13 @@ main .AreasContaminadas {
 
 .AreasContaminadas .TextoImg .textos {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .AreasContaminadas .TextoImg p{
+    font-size: 1.1rem;
     text-align: start;
     line-height: 1.7rem;
     color: var(--corCinzaClaro);
@@ -211,7 +224,7 @@ main .ServCartograficos {
 }
 
 .modal .imgConteudo{
-    width: 70%;
+    width: 55%;
     padding: 10px;
     margin: 10px auto;
 }
