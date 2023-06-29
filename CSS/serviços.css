@@ -137,7 +137,7 @@ main .AreasContaminadas {
     row-gap: 1rem;
 }
 
-.AreasContaminadas .TextoImg p{
+.AreasContaminadas .TextoImg p {
     font-size: 1.1rem;
     text-align: start;
     line-height: 1.7rem;
@@ -318,6 +318,10 @@ main .ServCartograficos {
     .RegFund {
         width: 300px;
     }
+
+    .LicenAmbiental .TextoImg .textos p, .PatrimonioCultural .TextoImg p, .AreasContaminadas .TextoImg p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -333,7 +337,7 @@ main .ServCartograficos {
         font-size: .9rem;
     }
     
-    .LicenAmbiental .TextoImg .textos p {
+    .LicenAmbiental .TextoImg .textos p, .PatrimonioCultural .TextoImg p, .AreasContaminadas .TextoImg p {
         font-size: .8rem;
     }
 
@@ -363,7 +367,7 @@ main .ServCartograficos {
         max-width: 300px;
     }
 
-    .modal .imgConteudo{
+    .modal .imgConteudo {
         width: 100%;
     }
 }
