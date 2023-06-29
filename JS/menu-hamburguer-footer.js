@@ -22,7 +22,7 @@ document.getElementById('radio1').checked = true;
 
 setInterval(() => {
     nextImage();
-}, 5000);
+}, 7000);
 
 function nextImage() {
     conta++
