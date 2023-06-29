@@ -22,6 +22,7 @@ main .Titulo {
 .Titulo p {
     font-size: 1rem;
     color: var(--corMarromEscura);
+    text-align: start;
 }
 
 /* SESSÃO DOWNLOAD */
