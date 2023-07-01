@@ -88,6 +88,23 @@ main .Equipe {
     margin: 0 auto;
     padding: 50px 30px;
     display: flex;
+    flex-direction: column;
+}
+
+.Equipe .titulo {
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+
+.Equipe .titulo h2{
+    color: var(--corMarromEscura);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Equipe .Socio-container {
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
@@ -193,9 +210,9 @@ main .Equipe {
         padding: 0;
     }
 
-    .Sessão-Historia .txt-container h1 {
+    .Sessão-Historia .txt-container h1, .Equipe .titulo h2 {
         font-size: 1.3rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     
     .Sessão-Historia .txt-container p {
