@@ -48,6 +48,7 @@ main .Download {
 .Download .Textos p{
     color: var(--corMarromEscura);
     line-height: 1.7rem;
+    text-align: justify;
 }
 
 .Download .Download-container {
@@ -74,7 +75,7 @@ main .Download {
 }
 
 .button .button__text {
-    transform: translateX(22px);
+    transform: translateX(16px);
     color: #fff;
     font-weight: 600;
 }

@@ -55,6 +55,15 @@ footer .Direitos {
    font-size: .9rem;
 }
 
+footer .Direitos p a {
+   color: var(--corMarromClara);
+}
+
+footer .Direitos p a:hover {
+   color: var(--corCinzaClaro);
+   text-decoration: underline;
+}
+
 footer span {
    color: #fff;
 }

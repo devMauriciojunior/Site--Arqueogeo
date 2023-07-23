@@ -26,6 +26,7 @@
     margin-bottom: 1rem;
     letter-spacing: 1px;
     line-height: 1.7rem;
+    text-align: justify;
 }
 
 .Sessão-Historia .txt-container strong {
@@ -145,7 +146,7 @@ main .Equipe {
 .Equipe .Socio-box .texto-box p {
     color: var(--corMarromEscura);
     font-size: .9rem;
-    text-align: start;
+    text-align: justify;
     line-height: 1.7rem;
 }
 

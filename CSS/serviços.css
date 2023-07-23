@@ -45,7 +45,7 @@ main .LicenAmbiental {
 
 .LicenAmbiental .TextoImg .textos p {
     font-size: 1.1rem;
-    text-align: start;
+    text-align: justify;
     line-height: 1.7rem;
     color: var(--corCinzaClaro);
 }
@@ -96,7 +96,7 @@ main .PatrimonioCultural {
 
 .PatrimonioCultural .TextoImg p {
     font-size: 1.1rem;
-    text-align: start;
+    text-align: justify;
     line-height: 1.7rem;
     color: var(--corMarromEscura);
 }
@@ -139,7 +139,7 @@ main .AreasContaminadas {
 
 .AreasContaminadas .TextoImg p {
     font-size: 1.1rem;
-    text-align: start;
+    text-align: justify;
     line-height: 1.7rem;
     color: var(--corCinzaClaro);
 }
@@ -214,7 +214,7 @@ main .ServCartograficos {
 }
 
 .textos .modal > div p {
-    text-align: start;
+    text-align: justify;
     line-height: 1.7rem;
     color: var(--corMarromEscura);
 }
